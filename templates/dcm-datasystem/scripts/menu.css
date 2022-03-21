@@ -1,0 +1,31 @@
+/*  LEVEL ONE  */
+ul.dropdown                       {list-style: none;margin:0px;padding:0px;position: relative;width:100%;}
+.dropdown ul                      {margin:0px;padding:0px;list-style:none;float:left;}
+ul.dropdown li                    {float:left; zoom: 1;display:block;position:relative;z-index:500;}
+
+ul.dropdown li a                  {text-decoration:none; font-size:18px;display: block;padding:4px 19px 10px 19px;background:url('../img/divider.gif') no-repeat right;color:#000000;}
+.dropdown li a:hover		      {color: #4B709D;}
+ul.dropdown li:last-child a       {border-right:none;} 
+
+/* Doesn't work in IE */
+ul.dropdown li.hover, ul.dropdown li:hover {position: relative;}
+
+.dropdown ul li ul li 			{ margin-left:0px;}
+
+/*  LEVEL TWO  */
+ul.dropdown ul 					{width: 230px; visibility:hidden;position:absolute;top:100%;left:0;color:#FFFFFF;}
+ul.dropdown ul li 				{color:#FFFFFF;float:none;text-align:left;}
+
+/* IE 6 & 7 Needs Inline Block */
+ul.dropdown ul li a				{text-decoration:none;font-size:14px;padding: 5px 0px 5px 15px;border:1px solid #DDD;border-top:none;border-left:none;
+background:rgba(255,255,255,0.8) url(../img/menu-bullet.gif) 4px 10px no-repeat;
+color:#000000;border-right:none;width:100%;display:inline-block;
+filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#8cffffff', endColorstr='#8cffffff'); /* IE */
+zoom:1;
+}
+ul.dropdown ul li a:hover		{color:#5B82B0;border-right: none; width: 100%;display:inline-block;background:#F9F9F9 url(../img/menu-bullet.gif) 4px 10px no-repeat;}
+
+
+/*  LEVEL THREE  */
+ul.dropdown ul ul 				{left:100%;top:0;}
+ul.dropdown li:hover > ul 		{visibility:visible;}

@@ -1,0 +1,55 @@
+#search {
+	background-color: #EFEFEF;
+	border: 1px solid #D0D0D0;
+	border-radius: 5px;
+	color: #000;
+	direction: ltr;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+	padding: 8px 10px;
+	float: right;
+	margin: 13px 0px;
+	text-align: start;
+	display: none;
+}
+.srchme {
+	position:absolute;
+	right: 14%;
+	z-index: 1;
+	top: 15px;
+	margin-bottom:30px;
+}
+.sty {
+	float: right;
+	background-color: #C63939;
+	border: 1px solid #C63939;
+	cursor: pointer;
+	color: #EEEEEE;
+	text-decoration: none;
+	font-size: 13px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding: 3px 3px;
+	line-height: 19px;
+	display: inline-block;
+	border-radius: 3px;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+	margin-top: 3px;
+	font-weight: bold;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+.sty:hover {
+	background-color: #B52828;
+	border: 1px solid #B52828;
+	color: #FFFFFF;
+}
+
+@media (min-width: 320px) {.srchme {right: 5%;}}
+@media (min-width: 720px) {.srchme {right: 3%;}}
+@media (min-width: 992px) {.srchme {right: 5%;}}
+@media (min-width: 1180px) {.srchme {right: 8%;}}
+@media (min-width: 1400px) {.srchme {right: 14%;}}

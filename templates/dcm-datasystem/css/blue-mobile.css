@@ -1,0 +1,142 @@
+.blueMobileMenu {
+	color:#fff;
+	display:block;
+	margin: 0;		
+	padding: 0;
+	position: relative;
+	font-size:1em;
+	z-index:1000;
+	display:none;
+	overflow:hidden;
+}
+
+.blueMobileMenuIcon {
+	background-color: rgb(47, 101, 154);
+	height: 47px;
+	width: 47px;
+	background-image: url('../../../../templates/dcm-datasystem/imgs/menu_icon.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	display: none;
+	padding: 10px;
+	vertical-align: middle;
+	background-size: 50% 40%;
+}
+
+.blueMobileMenu li a:hover {
+color:#9BBEE1;
+}
+
+.blueMobileMenuIcon {
+	display: none;
+}
+
+.blueMobileMenu li {
+	background:#2f659a;
+	border-bottom: solid 1px #407aaf;
+	cursor:pointer;
+	float:left;
+	padding:12px 18px;
+	list-style:none;
+}
+
+.blueMobileMenu li a {
+	color:#fff;
+	text-decoration: none;
+}
+
+.blueMobileMenu li ul li {
+	background: #407aaf;
+	border-bottom:solid 1px #fff;
+	float:none;
+}
+
+.blueMobileMenu li ul li ul li {
+	background: #66a5da;
+}
+
+.blueMobileMenu li ul li ul li ul li {
+	background:#91b4d1;
+}
+
+.blueMobileMenu li ul {
+	margin: 12px -18px -13px -58px;
+	position: absolute;
+}
+
+.blueMobileMenu > li {
+	border-right: solid 1px #fff;
+}
+
+.closed > ul {
+	display: none;
+}
+
+.icon {
+	float:right;
+	height:15px;
+	margin: 1px 0px 0px 10px;
+}
+
+@media (max-width: 979px) {
+	.blueMobileMenuIcon {
+		display: block;
+	}
+
+	.blueMobileMenu {
+		color:#fff;
+		display:none;
+		margin:0px 0px 0px 40%;
+		padding: 0;
+		position: relative;
+		font-size:1em;
+		z-index:1000;
+	}
+
+	.blueMobileMenu li {
+		background:#2f659a;
+		border-bottom: solid 1px #407aaf;
+		cursor:pointer;
+		float:none;
+		padding:12px 18px;
+		position: relative;
+		list-style:none;
+	}
+
+	.blueMobileMenu > li {
+		border-right: none;
+	}
+
+	.blueMobileMenu li a {
+		color:#fff;
+		text-decoration: none;
+	}
+
+	.blueMobileMenu li ul li {
+		background: #407aaf;
+		border-bottom:solid 1px #fff;
+	}
+
+	.blueMobileMenu li ul li ul li {
+		background: #66a5da;
+	}
+
+	.blueMobileMenu li ul li ul li ul li {
+		background:#91b4d1;
+	}
+
+	.blueMobileMenu li ul {
+		margin: 12px -18px -13px -58px;
+		position: relative;
+	}
+
+	.closed > ul {
+		display: none;
+	}
+
+	.icon {
+		float:right;
+		height: 25px;
+		margin-top: -4px;
+	}
+}
